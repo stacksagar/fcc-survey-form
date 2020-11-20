@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey Form</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <section id="form-wrapper">
+  <h1 id="title"> <b>StackDev</b> Survey Form </h1>
+  <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+
+  <form action="" id="survey-form">
+
+   <label id="name-label" for="name">Name</label>
+   <input id="name" type="text" required="required" placeholder="Enter Your Name">
+
+   <label id="email-label" for="email">Email</label>
+   <input id="email" type="email" required="required" placeholder="Enter Your Name">
+
+   <label id="number-label" for="number" ><b>Age</b> (optional) </label>
+   <input min="18" max="100" id="number" type="number" required="required" placeholder="18">
+
+   <label>Which option best describes your current role?</label>
+   <select id="dropdown">
+    <option selected disabled value>Select current role</option>
+    <option value='student'>Student</option>
+    <option value='Full Time Job'>Full Time Job</option>
+    <option value='Full Time Learner'>Full Time Learner</option>
+   </select>
+
+   <label for="">Would you recommend freeCodeCamp to a friend?</label>
+   <label class="unset">
+    <input class="unset" name="recommend" value="Definitely" type="radio">
+    Definitely
+   </label>
+   <label class="unset">
+    <input class="unset" name="recommend" value="Maybe" type="radio">
+    Maybe
+   </label>
+   <label class="unset">
+    <input class="unset" name="recommend" value="Not sure" type="radio">
+    Not sure
+   </label>
+   <br>
+   <label>What is your favorite feature of freeCodeCamp?</label>
+   <select id="dropdown">
+    <option selected disabled value>Select an option</option>
+    <option value='Challenges'>Challenges</option>
+    <option value='Projects'>Projects</option>
+    <option value='Community'>Community</option>
+    <option value='Open source'>Open source</option>
+   </select>
+
+   <label>What would you like to see improved?</label>
+   <label class="unset">
+    <input class="unset" type="checkbox" value="Front-end-Projects">
+    Front-end Projects
+   </label>
+   <label class="unset">
+    <input class="unset" type="checkbox" value="Back-end-Projects">
+    Back-end Projects
+   </label>
+   <label class="unset">
+    <input class="unset" type="checkbox" value="Data Visualization">
+    Data Visualization
+   </label>
+   <br>
+
+   <label>Any comments or suggestions?</label>
+   <textarea placeholder="Enter your comment here..." name="" id="" rows="4"></textarea>
+
+   <input type="submit" value="Submit" id="submit">
+
+  </form>
+
+ </section>
+
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+ <script>
+  var e = document.getElementById("number"); 
+ </script>
+</body>
+</html>
